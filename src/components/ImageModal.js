@@ -10,7 +10,6 @@ This component is a modal used to show an image selected by the user. It receice
 */
 function ImageModal(props) {
     const { blurSetter, isBlur, photo } = props
-   // console.log(photo)
     return (
         <Fragment>
             <div className={`fixed top-14 flex justify-center w-full h-screen z-50 ${isBlur ? '' : 'hidden'}`} onClick={() => blurSetter(false)}>
